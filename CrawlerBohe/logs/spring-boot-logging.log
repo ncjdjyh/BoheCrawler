@@ -1,0 +1,33 @@
+2018/07/03-14:07 [main] INFO  com.how2java.springboot.dao.FoodDaoTest- Starting FoodDaoTest on DESKTOP-AKS72PG with PID 10924 (started by Sharp_jyh in D:\My\Java\CrawlerBohe)
+2018/07/03-14:07 [main] INFO  com.how2java.springboot.dao.FoodDaoTest- No active profile set, falling back to default profiles: default
+2018/07/03-14:07 [main] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15aab8c6: startup date [Tue Jul 03 14:07:18 CST 2018]; root of context hierarchy
+2018/07/03-14:07 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2018/07/03-14:07 [main] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018/07/03-14:07 [main] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.0.12.Final}
+2018/07/03-14:07 [main] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2018/07/03-14:07 [main] INFO  org.hibernate.cfg.Environment- HHH000021: Bytecode provider name : javassist
+2018/07/03-14:07 [main] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018/07/03-14:07 [main] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018/07/03-14:07 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate- HHH000228: Running hbm2ddl schema update
+2018/07/03-14:07 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@15aab8c6: startup date [Tue Jul 03 14:07:18 CST 2018]; root of context hierarchy
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/hello]}" onto public java.lang.String com.how2java.springboot.web.HelloController.hello(org.springframework.ui.Model) throws java.lang.Exception
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/studentclass/{id}],methods=[GET]}" onto public com.how2java.springboot.pojo.StudentClass com.how2java.springboot.web.StudentController.getStudentClass(int)
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/{id}],methods=[GET]}" onto public com.how2java.springboot.pojo.Student com.how2java.springboot.web.StudentController.getStudent(int) throws java.lang.Exception
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student/{id}],methods=[DELETE]}" onto public java.lang.String com.how2java.springboot.web.StudentController.deleteStudent(int) throws java.lang.Exception
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/editStudent]}" onto public java.lang.String com.how2java.springboot.web.StudentController.editStudent(int,org.springframework.ui.Model) throws java.lang.Exception
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student],methods=[PUT]}" onto public void com.how2java.springboot.web.StudentController.updateStudent(com.how2java.springboot.pojo.Student) throws java.lang.Exception
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student],methods=[POST]}" onto public com.how2java.springboot.pojo.Student com.how2java.springboot.web.StudentController.listStudent(com.how2java.springboot.pojo.Student) throws java.lang.Exception
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/student],methods=[GET]}" onto public com.github.pagehelper.PageInfo<com.how2java.springboot.pojo.Student> com.how2java.springboot.web.StudentController.listStudent(int,int)
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver- Detected @ExceptionHandler methods in globalExceptionHandler
+2018/07/03-14:07 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018/07/03-14:07 [main] INFO  com.how2java.springboot.dao.FoodDaoTest- Started FoodDaoTest in 8.724 seconds (JVM running for 9.968)
+2018/07/03-14:07 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator- HHH000397: Using ASTQueryTranslatorFactory
+2018/07/03-14:07 [Thread-4] INFO  org.springframework.web.context.support.GenericWebApplicationContext- Closing org.springframework.web.context.support.GenericWebApplicationContext@15aab8c6: startup date [Tue Jul 03 14:07:18 CST 2018]; root of context hierarchy
+2018/07/03-14:07 [Thread-4] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
