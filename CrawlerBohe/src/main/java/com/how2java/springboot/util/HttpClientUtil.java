@@ -26,7 +26,7 @@ public class HttpClientUtil {
         // 简单起见，只处理返回值为 200 的状态码
         if (statusCode == HttpStatus.SC_OK) {
             System.out.println(statusCode);
-            HttpEntity entity =response.getEntity();
+            HttpEntity entity = response.getEntity();
             String result = EntityUtils.toString(entity,"utf-8");
             //System.out.println(result);
             //关闭httpclient

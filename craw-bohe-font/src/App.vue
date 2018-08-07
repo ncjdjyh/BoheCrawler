@@ -9,14 +9,14 @@
 <script>
 import HelloWorld from './components/HelloWorld'
 import Background from "./components/Background"
-import SearchBar from "./components/SearchBar"
+import SearchContent from "./components/SearchContent"
 
 export default {
   name: 'App',
   components: {
     helloworld: HelloWorld,
     background: Background,
-    search: SearchBar,
+    search: SearchContent,
   }
 }
 </script>
