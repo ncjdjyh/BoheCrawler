@@ -7,14 +7,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import Background from "./components/Background"
-import SearchContent from "./components/SearchContent"
+import SearchContent from "./components/search"
 
 export default {
   name: 'App',
   components: {
-    helloworld: HelloWorld,
     background: Background,
     search: SearchContent,
   }

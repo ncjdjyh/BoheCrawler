@@ -1,47 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cf778a4-9f2d-445f-9cfd-7a8b4395f53c" name="Default" comment="添加RedisUtil">
-      <change afterPath="$PROJECT_DIR$/.idea/CrawlerBohe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/annotation/RedisCache.java" afterDir="false" />
+    <list default="true" id="9cf778a4-9f2d-445f-9cfd-7a8b4395f53c" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/LoggerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/RedisAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/how2java/springboot/service/FoodServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/GoCrawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/pojo/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/pojo/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/CrawlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/CrawlUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodsServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodsServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/HttpClientUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/ServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/ServerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/RedisAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/RedisAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/RedisUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/how2java/springboot/crawl/GoCrawlTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/how2java/springboot/dao/FoodDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/crawl/GoCrawl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/pojo/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/pojo/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/CrawlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/CrawlUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/FoodsServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/FoodsServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/ServerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/ServerManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/web/FoodController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/web/FoodController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/how2java/springboot/crawl/GoCrawlTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/how2java/springboot/dao/FoodDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../craw-bohe-font/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/web/FoodController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../craw-bohe-font/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/components/Background.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../craw-bohe-font/src/components/Background.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/components/FoodList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../craw-bohe-font/src/components/FoodList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/components/SearchBar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../craw-bohe-font/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/components/FoodList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/components/FoodList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/components/HelloWorld.vue" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,47 +51,51 @@
     <session id="-1195542928">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="29" />
-          <entry key="java" value="80" />
+          <entry key="class" value="30" />
+          <entry key="java" value="95" />
           <entry key="jsp" value="1" />
-          <entry key="properties" value="5" />
+          <entry key="properties" value="6" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="29" />
-          <entry key="JAVA" value="80" />
+          <entry key="CLASS" value="30" />
+          <entry key="JAVA" value="95" />
           <entry key="JSP" value="1" />
-          <entry key="Properties" value="5" />
+          <entry key="Properties" value="6" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="2514" />
+          <entry key="java" value="2918" />
           <entry key="properties" value="1" />
+          <entry key="txt" value="35" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2514" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JAVA" value="2918" />
+          <entry key="PLAIN_TEXT" value="36" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="27" />
         </counts>
@@ -127,19 +105,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state relative-caret-position="361">
+              <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodsServer.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="516">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,21 +131,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+        <entry file="jar://C:/Program Files/jdk1.8/jdk1.8.0_91/src.zip!/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="497">
+              <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding>
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/RedisAspect.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="126">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/RedisUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2332#2333#0" expanded="true" />
+                <element signature="e#2412#2413#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,7 +177,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/LoggerAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="360">
               <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -181,10 +187,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/ServerManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/RedisAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="294">
+              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,40 +199,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/PageHelperConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/HelloController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/WebSocketConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/CrawlUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/annotation/RedisCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="144">
+              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -236,10 +221,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -285,7 +270,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/AbstractJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/GoCrawl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/ServerManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/HttpClientUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
@@ -296,19 +280,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/annotation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/SerialzeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/pojo/Food.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/RedisUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/how2java/springboot/util/RedisUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/LoggerAspect.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/how2java/springboot/service/FoodServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/CrawlUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/annotation/RedisCache.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/annotation/RedisCacheKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodsServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/RedisService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/RedisUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/RedisAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java" />
       </list>
     </option>
   </component>
@@ -353,11 +339,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="32" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="12" />
+    <option name="y" value="15" />
     <option name="width" value="1550" />
-    <option name="height" value="1015" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -365,9 +351,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -530,6 +513,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -541,7 +527,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533552975836" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533638028658" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -643,7 +629,7 @@
       <module name="CrawlerBohe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.how2java.springboot.util.*" />
+          <option name="PATTERN" value="com.how2java.springboot.crawl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -658,7 +644,7 @@
       <module name="CrawlerBohe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.how2java.springboot.util.*" />
+          <option name="PATTERN" value="com.how2java.springboot.crawl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -758,8 +744,20 @@
       <workItem from="1533481363510" duration="135000" />
       <workItem from="1533518759301" duration="19000" />
       <workItem from="1533544601313" duration="7830000" />
-      <workItem from="1533604962530" duration="235000" />
+      <workItem from="1533604962530" duration="1268000" />
+      <workItem from="1533608308357" duration="596000" />
+      <workItem from="1533612649585" duration="4964000" />
+      <workItem from="1533629270721" duration="601000" />
+      <workItem from="1533632719253" duration="4831000" />
     </task>
+    <task id="LOCAL-00001" summary="添加redis的aop切面">
+      <created>1533605333449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533605333449</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -795,7 +793,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115507000" />
+    <option name="totallyTimeSpent" value="127430000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,10 +805,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="26" width="1240" height="812" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29187816" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24664879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -820,17 +818,17 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.33427763" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.24220963" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5042493" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.31586403" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32719547" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32577905" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.08923513" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3291592" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32840237" />
       <window_info anchor="bottom" id="Problems" order="13" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5013405" side_tool="true" weight="0.60678923" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -842,7 +840,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.13790186" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.10924933" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3297587" />
     </layout>
   </component>
@@ -883,7 +881,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="添加RedisUtil" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加RedisUtil" />
+    <MESSAGE value="添加redis的aop切面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加redis的aop切面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -902,22 +901,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Maven/m2/org/springframework/data/spring-data-redis/1.8.9.RELEASE/spring-data-redis-1.8.9.RELEASE.jar!/org/springframework/data/redis/serializer/RedisSerializer.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="147" column="18" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Maven/m2/org/springframework/data/spring-data-redis/1.8.9.RELEASE/spring-data-redis-1.8.9.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class" />
     <entry file="jar://C:/Maven/m2/org/springframework/data/spring-data-redis/1.8.9.RELEASE/spring-data-redis-1.8.9.RELEASE.jar!/org/springframework/data/redis/core/ListOperations.class" />
     <entry file="jar://C:/Maven/m2/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar!/org/aspectj/lang/ProceedingJoinPoint.class" />
     <entry file="jar://C:/Maven/m2/org/springframework/spring-core/4.3.13.RELEASE/spring-core-4.3.13.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
@@ -956,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/jdk1.8/jdk1.8.0_91/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/how2java/springboot/service/FoodServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -981,13 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Maven/repository/org/springframework/data/spring-data-redis/1.8.9.RELEASE/spring-data-redis-1.8.9.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
@@ -1076,20 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/RedisService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listStudent.jsp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1101,13 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1115,40 +1063,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/RedisAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/redis.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/LoggerAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/CrawlUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1044">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/ServerManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodsServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="90">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1162,13 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/CrawlUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/annotation/RedisCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1176,12 +1101,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodsServer.java">
+    <entry file="jar://C:/Maven/repository/org/springframework/data/spring-data-redis/1.8.9.RELEASE/spring-data-redis-1.8.9.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="161">
+          <caret line="476" column="19" selection-start-line="476" selection-start-column="19" selection-end-line="476" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/ServerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/config/PageHelperConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/LoggerAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/aop/RedisAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/jdk1.8/jdk1.8.0_91/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+          <folding>
+            <element signature="e#2332#2333#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
           </folding>
         </state>
       </provider>

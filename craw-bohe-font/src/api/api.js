@@ -4,7 +4,7 @@ let base = 'http://127.0.0.1:8080';
 
 export const requestLogin = params => { return axios.post(`${base}/login`, params).then(res => res.data); };
 
-export const getFoodList = params => { return axios.get(`${base}/food?name=${params}`); };
+export const GetFoodList = params => { return axios.get(`${base}/food?name=${params}`); };
 
 export const getUser = params => {return axios.get(`${base}/student/${params}`)}
 

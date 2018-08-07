@@ -1,6 +1,7 @@
 package com.how2java.springboot.crawl;
 
 import com.how2java.springboot.pojo.Food;
+import com.how2java.springboot.service.FoodService;
 import com.how2java.springboot.util.CrawlUtil;
 import com.how2java.springboot.util.HttpClientUtil;
 import com.how2java.springboot.web.FoodController;
@@ -14,13 +15,13 @@ import java.util.regex.Pattern;
 @Component
 public class CrawlThread extends AbstractJob  {
     //存放发爬取控制器，得到内容了返回给它
-    private FoodController controller;
+    private CrawlInterface controller;
     private List<Food> foods;
     @Autowired
     private CrawlUtil crawlUtil;
     private String keyword;
 
-    public void crawlInit(FoodController controller, String keyword) {
+    public void crawlInit(CrawlInterface controller, String keyword) {
         this.keyword = keyword;
         this.controller = controller;
     }

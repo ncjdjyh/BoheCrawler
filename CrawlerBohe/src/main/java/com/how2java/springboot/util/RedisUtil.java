@@ -17,7 +17,7 @@ public class RedisUtil {
     /**
      * @Auther: ncjdjyh
      * @Date: 2018/8/3 17:34
-     * @Description:基于spring和redis的redisTemplate工具类
+     * @Description: redisTemplate工具类
      * 针对所有的hash 都是以h开头的方法
      * 针对所有的Set 都是以s开头的方法
      * 针对所有的List 都是以l开头的方法
@@ -118,7 +118,6 @@ public class RedisUtil {
             e.printStackTrace();
             return false;
         }
-
     }
 
     /**
@@ -147,7 +146,6 @@ public class RedisUtil {
      * 递增
      *
      * @param key 键
-     * @param by  要增加几(大于0)
      * @return
      */
     public long incr(String key, long delta) {
@@ -161,7 +159,6 @@ public class RedisUtil {
      * 递减
      *
      * @param key 键
-     * @param by  要减少几(小于0)
      * @return
      */
     public long decr(String key, long delta) {

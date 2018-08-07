@@ -71,6 +71,8 @@ public class RedisAspect {
         log.info("**********开始从MySQL查询数据**********");
         //后置：将数据库查到的数据保存到Redis
         boolean code = redisUtil.set(redisKey, obj);
+        //设置过期时间一小时
+        redisUtil.expire(redisKey, 3600);
         if (code) {
             log.info("**********数据成功保存到Redis缓存!!!**********");
             log.info("Redis的KEY值:" + redisKey);
