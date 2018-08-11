@@ -24,17 +24,6 @@ public class FoodController {
 
     @RequestMapping(value = "/food", method = RequestMethod.GET)
     public Object listFood(@RequestParam(value = "name", required = true, defaultValue = "") String name, HttpServletResponse response) throws GlobalExceptionHandler {
-        /*List<Food> foods = foodService.findByNameLike(name);
-        if (name.isEmpty())
-            throw  new GlobalExceptionHandler();
-        //先去redis中找,找不到去数据库中找,找不到去薄荷中爬,再没有返回error
-        if (!foods.isEmpty()) {
-            return foods;
-        } else {
-            crawlFromBohe(name);
-            return null;
-        }*/
-
         return foodService.enhanceSearchFood(name);
     }
 }

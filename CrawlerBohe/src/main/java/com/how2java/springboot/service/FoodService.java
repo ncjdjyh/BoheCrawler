@@ -26,15 +26,15 @@ public class FoodService implements CrawlInterface<Food> {
     @Autowired
     private CrawlThread crawler;
 
-    @RedisCache
     public List<Food> findByNameLike( String name) {
-        return foodDao.findByNameLike(name + "%");
+        return foodDao.findByNameLike("%" + name + "%");
     }
 
     public void save(List<Food> foods) {
         foodDao.save(foods);
     }
 
+    @RedisCache
     public List<Food> enhanceSearchFood(String name) throws GlobalExceptionHandler {
         if (name.isEmpty())
             throw  new GlobalExceptionHandler();
