@@ -6,6 +6,8 @@ export const requestLogin = params => { return axios.post(`${base}/login`, param
 
 export const GetFoodList = params => { return axios.get(`${base}/food?name=${params}`); };
 
+export const SuggestSearch = params => { return axios.get(`${base}/food/suggest_search?name=${params}`)}
+
 export const getUser = params => {return axios.get(`${base}/student/${params}`)}
 
 //export const getUserListPage = params => { return axios.get("http://localhost:8080/student", { params: params }); };

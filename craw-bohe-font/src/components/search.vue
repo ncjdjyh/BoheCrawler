@@ -1,8 +1,21 @@
 <template>
   <div>
     <el-row>
-      <el-input  v-model="inputContent" placeholder="请输入你要查询的食物"></el-input>
-      <el-button type="primary" plain  @click="getFoodList">搜索</el-button>
+      <el-autocomplete
+        class="inline-input"
+        v-model="inputContent"
+        :fetch-suggestions="querySearch"
+        placeholder="请输入要查询的食物"
+        :trigger-on-focus="false"
+        @select="handleSelect">
+        <template slot-scope="{ item }">
+          <div class="name">{{ item.name }}</div>
+        </template>
+      </el-autocomplete>
+      <el-button
+         type="primary" plain
+         @click="getFoodList">搜索
+      </el-button>
     </el-row>
     <div align="center">
       <div v-if="hasFoods">
@@ -51,8 +64,8 @@
 <script src="./searchContent.js"></script>
 
 <style scoped>
-  .el-input {
-    margin-top: 30px;
+  .el-autocomplete {
+    margin-top: 20px;
     width: 400px;
   }
 </style>
