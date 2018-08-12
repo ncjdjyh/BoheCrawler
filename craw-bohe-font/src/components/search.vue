@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-row>
-      <el-input  v-model="inputContent" placeholder="请输入内容"></el-input>
+      <el-input  v-model="inputContent" placeholder="请输入你要查询的食物"></el-input>
       <el-button type="primary" plain  @click="getFoodList">搜索</el-button>
     </el-row>
     <div align="center">
@@ -19,6 +19,16 @@
             prop="heat"
             label="热量"
             width="180">
+          </el-table-column>
+          <el-table-column
+            prop="img"
+            label="图片"
+            width="180">
+            <template slot-scope="scope">
+              <img :src= "imgUrl(scope.row.img)"
+                   width="100"
+                   height="100"/>
+            </template>
           </el-table-column>
         </el-table>
         <div class="block">

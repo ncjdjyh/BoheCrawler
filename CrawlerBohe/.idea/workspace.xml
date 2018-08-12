@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cf778a4-9f2d-445f-9cfd-7a8b4395f53c" name="Default" comment="~">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/DownloadThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/MD5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/how2java/springboot/crawler/CrawlThreadTest.java" afterDir="false" />
+    <list default="true" id="9cf778a4-9f2d-445f-9cfd-7a8b4395f53c" name="Default" comment="添加图片的爬取和前台图片的显示">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/AbstractJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawler/AbstractJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawler/CrawlInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/CrawlThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawler/CrawlThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawl/IJJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/crawler/IJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/CrawlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/CrawlUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodsServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/FoodsServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/how2java/springboot/web/FoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/crawl/AbstractJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/crawl/CrawlInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/crawl/CrawlThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/crawl/IJob.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/service/FoodService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/service/FoodService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/CrawlUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/CrawlUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/FoodsServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/util/FoodsServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/how2java/springboot/web/FoodController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/how2java/springboot/web/FoodController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../craw-bohe-font/src/components/searchContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/../craw-bohe-font/src/components/searchContent.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,14 +81,14 @@
           <entry key="dummy" value="7" />
           <entry key="java" value="4056" />
           <entry key="properties" value="1" />
-          <entry key="txt" value="68" />
+          <entry key="txt" value="107" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="4056" />
-          <entry key="PLAIN_TEXT" value="75" />
+          <entry key="PLAIN_TEXT" value="114" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="27" />
         </counts>
@@ -113,10 +97,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
+            <state relative-caret-position="90">
               <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -139,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/DownloadThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="295">
               <caret line="33" column="112" selection-start-line="33" selection-start-column="112" selection-end-line="33" selection-end-column="112" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -736,7 +720,7 @@
       <workItem from="1533638311138" duration="41000" />
       <workItem from="1533638623056" duration="1589000" />
       <workItem from="1533947369318" duration="10754000" />
-      <workItem from="1534057969782" duration="3676000" />
+      <workItem from="1534057969782" duration="3872000" />
     </task>
     <task id="LOCAL-00001" summary="添加redis的aop切面">
       <created>1533605333449</created>
@@ -759,7 +743,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533978288859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加图片的爬取和前台图片的显示">
+      <created>1534066196786</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1534066196786</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -795,7 +786,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144345000" />
+    <option name="totallyTimeSpent" value="144541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,7 +810,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.43342775" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.14164306" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.16288953" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -829,7 +820,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.4631728" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.53966004" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.5042493" />
       <window_info anchor="bottom" id="Problems" order="13" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5013405" side_tool="true" weight="0.60678923" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -895,7 +886,8 @@
     <MESSAGE value="添加redis的aop切面" />
     <MESSAGE value="日常优化,前后端逻辑" />
     <MESSAGE value="~" />
-    <option name="LAST_COMMIT_MESSAGE" value="~" />
+    <MESSAGE value="添加图片的爬取和前台图片的显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加图片的爬取和前台图片的显示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1249,14 +1241,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/DownloadThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+        <state relative-caret-position="295">
+          <caret line="33" column="112" selection-start-line="33" selection-start-column="112" selection-end-line="33" selection-end-column="112" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1271,12 +1261,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/util/DownloadThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/how2java/springboot/service/FoodService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="33" column="112" selection-start-line="33" selection-start-column="112" selection-end-line="33" selection-end-column="112" />
+        <state relative-caret-position="90">
+          <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
           </folding>
         </state>
       </provider>
