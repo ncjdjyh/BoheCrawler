@@ -1,4 +1,4 @@
-package com.how2java.springboot.crawl;
+package com.how2java.springboot.crawler;
 
 
 import java.util.List;

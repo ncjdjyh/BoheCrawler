@@ -18,14 +18,18 @@ import java.util.regex.Pattern;
 @Component
 //爬虫工具类
 public class CrawlUtil {
+    /**
+     * @Auther: ncjdjyh
+     * @Date: 2018/8/1 17:29
+     * @Description: 爬虫工具类
+     */
+
     @Autowired
     private FoodService foodService;
 
-    public CrawlUtil() {
-    }
-
     public List<Food> findFoodInfoAndSaveInDB(String result) {
         List<Food> foods = new ArrayList<>();
+        List<String> foodImgs = new ArrayList<>();
         Document doc = Jsoup.parse(result);
         Elements lis = doc.getElementsByClass("item clearfix");
         if (!lis.isEmpty()) {
@@ -34,14 +38,25 @@ public class CrawlUtil {
                 String name = findName(e);
                 String description = findDescription(e);
                 String img = findImg(e);
-                Food food = new Food(name, description, img, heat);
+                //换一下名字
+                String imgName = img.substring(img.lastIndexOf("/") + 1, img.length());
+                Food food = new Food(name, description, imgName, heat);
                 foods.add(food);
+                foodImgs.add(img);
             }
+            //启一个线程去下载图片
+            downloadPictures(foodImgs);
             saveFoodInDB(foods);
             return foods;
         } else {
             return null;
         }
+    }
+
+    private void downloadPictures(List<String> foodImgs) {
+        DownloadThread dt = new DownloadThread(foodImgs);
+        Thread t = new Thread(dt);
+        t.start();
     }
 
     private  String findHeat(Element element) {
@@ -55,9 +70,7 @@ public class CrawlUtil {
         String name = "";
         Elements textBox = element.getElementsByClass("text-box pull-left");
         Elements a = textBox.get(0).getElementsByTag("a");
-        Elements title = a.get(0).getElementsByAttribute("title");
-        name = title.get(0).text();
-        return name;
+        return a.attr("title");
     }
 
     private  String findDescription(Element element) {
@@ -67,8 +80,7 @@ public class CrawlUtil {
     private static String findImg(Element element) {
         Elements imgBox = element.getElementsByClass("img-box pull-left");
         Elements img = imgBox.get(0).getElementsByTag("img");
-        Elements src = img.get(0).getElementsByAttribute("src");
-        return src.text();
+        return img.attr("src");
     }
 
     public void saveFoodInDB(List<Food> foods) {

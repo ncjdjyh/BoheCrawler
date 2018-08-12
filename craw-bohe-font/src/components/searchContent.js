@@ -21,9 +21,15 @@ export default {
     }
   },
   computed: {
-    limitFoods: function() {
+    limitFoods() {
       let page = this.pageContent
       return this.foods.slice((page.currentPage - 1) * page.pageSize, page.currentPage * page.pageSize)
+    },
+    //使用闭包的方式为计算属性传递参数
+    imgUrl() {
+      return function(url) {
+        return "../static/foods/" + url
+      }
     }
   },
   methods: {
@@ -56,7 +62,6 @@ export default {
       }
     },
     handleCurrentChange(val) {
-      console.log(val)
       this.pageContent.currentPage = val
     },
     initPageContent(page) {

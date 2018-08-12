@@ -2,11 +2,11 @@ package com.how2java.springboot.service;
 
 import com.google.gson.Gson;
 import com.how2java.springboot.annotation.RedisCache;
-import com.how2java.springboot.crawl.CrawlThread;
+import com.how2java.springboot.crawler.CrawlThread;
 import com.how2java.springboot.dao.FoodDao;
 import com.how2java.springboot.exception.GlobalExceptionHandler;
 import com.how2java.springboot.pojo.Food;
-import com.how2java.springboot.crawl.CrawlInterface;
+import com.how2java.springboot.crawler.CrawlInterface;
 import com.how2java.springboot.util.ServerManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

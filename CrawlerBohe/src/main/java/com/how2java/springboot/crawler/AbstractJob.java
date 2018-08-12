@@ -1,4 +1,4 @@
-package com.how2java.springboot.crawl;
+package com.how2java.springboot.crawler;
 
 /*用一个抽象类来实现IJJob 否者每个具体的实现类都得实现这一大堆的方法
 *这样一来子类继承这个抽象类就可以只实现它所关心的抽象方法
@@ -20,7 +20,7 @@ public abstract class AbstractJob implements IJob {
         this.beforeRun();
 
         try {
-            this.doFetchPage();
+            this.doFetch();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -36,5 +36,5 @@ public abstract class AbstractJob implements IJob {
      *
      * @throws Exception
      */
-    public abstract void doFetchPage() throws Exception;
+    public abstract void doFetch() throws Exception;
 }
