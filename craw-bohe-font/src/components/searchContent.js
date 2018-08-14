@@ -12,18 +12,20 @@ export default {
       foods: [],
       suggestFoods: [],
       hasFoods: true,
+      loadingFlag: false,
       total: "",
       pageContent: {
         contents: [],
         currentPage: 1,
-        total: 5,
-        pageSize: 5
+        total: 4,
+        pageSize: 4
       }
     }
   },
   computed: {
     limitFoods() {
       let page = this.pageContent
+      console.log(page)
       return this.foods.slice((page.currentPage - 1) * page.pageSize, page.currentPage * page.pageSize)
     },
     //使用闭包的方式为计算属性传递参数
@@ -35,19 +37,25 @@ export default {
   },
   methods: {
     getFoodList() {
-      GetFoodList(this.inputContent).then(data => {
-        let v = data.data
-        console.log(v)
-        console.log(data.data)
-        if (v != null && v != '' && v != undefined) {
-          this.initFoodsFlag()
-          this.foods = data.data
-          this.initPageContent(this.pageContent)
-        }
-      })
+      this.loadingFlag = true
+      let v = this.inputContent
+      if (v != '' && v != null && v != undefined) {
+        GetFoodList(this.inputContent).then(data => {
+          let d = data.data
+          if (d != null && d != '' && d != undefined) {
+            this.initFoodsFlag()
+            this.foods = d
+            this.initPageContent(this.pageContent)
+            this.loadingFlag = false
+          } else {
+            this.showCrawlMessage()
+          }
+        })
+      }
     },
     updateFoodList(newV) {
-      console.log(newV)
+      console.log("-----------------")
+      this.loadingFlag = false
       if (newV == "error") {
         this.hasFoods = false
       } else {
@@ -83,6 +91,13 @@ export default {
     },
     handleSelect(item) {
       this.inputContent = item.name
+    },
+    showCrawlMessage() {
+      this.$notify({
+        title: '爬',
+        message: '没有找到你需要的食物,已帮你去爬取',
+        duration: 3000
+      });
     }
   },
 }

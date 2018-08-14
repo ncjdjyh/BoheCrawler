@@ -1,7 +1,5 @@
 package com.how2java.springboot.aop;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.how2java.springboot.pojo.Food;
 import com.how2java.springboot.util.RedisUtil;
 import lombok.extern.slf4j.Slf4j;

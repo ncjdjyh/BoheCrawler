@@ -1,8 +1,7 @@
 package com.how2java.springboot.service;
 
 import com.google.gson.Gson;
-import com.how2java.springboot.annotation.RedisCache;
-import com.how2java.springboot.crawler.CrawlThread;
+import com.how2java.springboot.thread.CrawlThread;
 import com.how2java.springboot.dao.FoodDao;
 import com.how2java.springboot.exception.GlobalExceptionHandler;
 import com.how2java.springboot.pojo.Food;
@@ -33,8 +32,7 @@ public class FoodService implements CrawlInterface<Food> {
     public void save(List<Food> foods) {
         foodDao.save(foods);
     }
-
-    @RedisCache
+    
     public List<Food> enhanceSearchFood(String name) throws GlobalExceptionHandler {
         if (name.isEmpty())
             throw  new GlobalExceptionHandler();
@@ -56,10 +54,10 @@ public class FoodService implements CrawlInterface<Food> {
 
     //接受从薄荷爬取的数据，将得到的数据通过websocket发送给客户端
     @Override
-    public void resultsFromBohe(List<Food> info)  {
-        //等一秒再发回去
+    public void resultsFromBohe(List<Food> info) {
+        //等200ms再发回去
         try {
-            Thread.sleep(1000);
+            Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

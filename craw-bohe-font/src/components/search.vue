@@ -20,6 +20,7 @@
     <div align="center">
       <div v-if="hasFoods">
         <el-table
+          v-loading="loadingFlag"
           :data="limitFoods"
           style="width: 90%"
           align="center">
@@ -54,9 +55,11 @@
           </el-pagination>
         </div>
       </div>
-      <span v-else>
-        没有找到你需要的数据,sorry!
-      </span>
+      <div v-else class="error-text">
+        <span>
+          没有找到你需要的数据,sorry!
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -67,5 +70,9 @@
   .el-autocomplete {
     margin-top: 20px;
     width: 400px;
+  }
+
+  .error-text {
+    margin-top: 20px;
   }
 </style>

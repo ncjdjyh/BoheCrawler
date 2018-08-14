@@ -1,10 +1,12 @@
 package com.how2java.springboot.pojo;
 
+import com.sun.xml.internal.txw2.annotation.XmlCDATA;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "food")
+@Table(name = "food_")
 public class Food implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,18 +14,30 @@ public class Food implements Serializable {
     @Column
     private String name;
     @Column
-    private String description;
-    @Column
     private String img;
+    @Column
+    private String category;
+    @Column
+    private String evaluation;
+    @Column
+    private String heat;
 
-    public Food() {
+    public Food() {}
+
+    public String getCategory() {
+        return category;
     }
 
-    public Food(String name, String description, String img, String heat) {
-        this.name = name;
-        this.description = description;
-        this.img = img;
-        this.heat = heat;
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getEvaluation() {
+        return evaluation;
+    }
+
+    public void setEvaluation(String evaluation) {
+        this.evaluation = evaluation;
     }
 
     public int getId() {
@@ -42,14 +56,6 @@ public class Food implements Serializable {
         this.name = name;
     }
 
-    public String getDiscription() {
-        return description;
-    }
-
-    public void setDiscription(String discription) {
-        this.description = discription;
-    }
-
     public String getImg() {
         return img;
     }
@@ -65,6 +71,4 @@ public class Food implements Serializable {
     public void setHeat(String heat) {
         this.heat = heat;
     }
-
-    private String heat;
 }
