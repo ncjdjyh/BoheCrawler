@@ -1,6 +1,7 @@
 package com.how2java.springboot.service;
 
 import com.google.gson.Gson;
+import com.how2java.springboot.annotation.RedisCache;
 import com.how2java.springboot.thread.CrawlThread;
 import com.how2java.springboot.dao.FoodDao;
 import com.how2java.springboot.exception.GlobalExceptionHandler;
@@ -32,7 +33,8 @@ public class FoodService implements CrawlInterface<Food> {
     public void save(List<Food> foods) {
         foodDao.save(foods);
     }
-    
+
+    @RedisCache
     public List<Food> enhanceSearchFood(String name) throws GlobalExceptionHandler {
         if (name.isEmpty())
             throw  new GlobalExceptionHandler();

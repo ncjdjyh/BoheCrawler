@@ -22,6 +22,9 @@ export default {
       }
     }
   },
+  mounted() {
+    this.checkFromStore()
+  },
   computed: {
     limitFoods() {
       let page = this.pageContent
@@ -53,8 +56,20 @@ export default {
         })
       }
     },
+    checkFromStore() {
+      let state = this.$store.state
+      if (state.food !== []) {
+        this.foods = state.food
+      }
+      if (state.inputContent != '') {
+        this.inputContent = state.inputContent
+      }
+    },
+    setStore() {
+      this.$store.commit("setFood", this.foods)
+      this.$store.commit("setContent", this.inputContent)
+    },
     updateFoodList(newV) {
-      console.log("-----------------")
       this.loadingFlag = false
       if (newV == "error") {
         this.hasFoods = false
@@ -98,6 +113,14 @@ export default {
         message: '没有找到你需要的食物,已帮你去爬取',
         duration: 3000
       });
+    },
+    handleRowClick(row) {
+      console.log(row)
+      this.setStore()
+      this.$router.push({
+        name: 'foodDetial',
+        path: '/food',
+        params: { food: row}})
     }
   },
 }
