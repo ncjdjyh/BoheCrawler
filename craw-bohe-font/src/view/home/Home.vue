@@ -1,5 +1,6 @@
 <template>
   <div>
+    <background></background>
     <el-row>
       <el-autocomplete
         class="inline-input"
@@ -14,7 +15,13 @@
       </el-autocomplete>
       <el-button
          type="primary" plain
-         @click="getFoodList">搜索
+         @click="getFoodList">
+        搜索
+      </el-button>
+      <el-button
+          type="primary"
+          @click="getFavoriteList">
+        收藏夹
       </el-button>
     </el-row>
     <div align="center">
@@ -56,7 +63,7 @@
   </div>
 </template>
 
-<script src="./searchContent.js"></script>
+<script src="./js/home.js"></script>
 
 <style scoped>
   .el-autocomplete {

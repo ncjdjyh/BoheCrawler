@@ -1,19 +1,12 @@
 <template>
   <div id="app">
-    <background></background>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Background from "./components/Background"
-import SearchContent from "./components/search"
-
 export default {
   name: 'App',
-  components: {
-    background: Background,
-  }
 }
 </script>
 

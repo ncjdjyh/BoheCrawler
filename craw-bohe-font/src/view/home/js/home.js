@@ -1,18 +1,42 @@
-import {GetFoodList, SuggestSearch} from "../api/api"
-import {getWebSocketConnetion, closeWebSocket} from "../api/webSocketApi"
+import {GetFoodList, SuggestSearch, GetUser} from "../../../api/api"
+import {getWebSocketConnetion, closeWebSocket} from "../../../api/webSocketApi"
+import background from '../../background/Background'
 
 export default {
+  components: {
+    background
+  },
   created() {
+    if (this.isLogin() == false) {
+      //退出页面后重进 通过cookie重新检查用户是否登录
+      GetUser().then(response => {
+        let data = response.data
+        if (data.status == '200') {
+          this.user.username = data.result
+          this.$store.commit('setAuthState', this.user)
+        }
+        //状态码不对
+      })
+    } else {
+      //没有退出网页, 只是进行了刷新, 直接在session中取出
+      let username = sessionStorage.getItem('username')
+      console.log(username)
+      this.$store.commit('setLoginUser', username)
+      this.$store.commit('setLoginState', true)
+    }
     //将要回调的方法给它
     getWebSocketConnetion(this.updateFoodList)
   },
   data() {
     return {
+      user: {
+        username:'',
+      },
       inputContent: "",
       foods: [],
       suggestFoods: [],
-      hasFoods: true,
       loadingFlag: false,
+      hasFoods: true,
       total: "",
       pageContent: {
         contents: [],
@@ -28,7 +52,6 @@ export default {
   computed: {
     limitFoods() {
       let page = this.pageContent
-      console.log(page)
       return this.foods.slice((page.currentPage - 1) * page.pageSize, page.currentPage * page.pageSize)
     },
     //使用闭包的方式为计算属性传递参数
@@ -39,6 +62,18 @@ export default {
     }
   },
   methods: {
+    //判断是否已经登录(未关闭浏览器页面)
+    isLogin() {
+      let username =  sessionStorage.getItem('username')
+      console.log(username)
+      if (username == undefined || username == null || username == '') {
+        console.log('false')
+        return false
+      } else {
+        return true
+        console.log('true')
+      }
+    },
     getFoodList() {
       this.loadingFlag = true
       let v = this.inputContent
@@ -56,7 +91,18 @@ export default {
         })
       }
     },
+    getFavoriteList() {
+      if (this.$store.getters.getLoginState == false) {
+        this.$router.push({
+          name: 'login',
+          path: '/login',
+        })
+      } else {
+        this.foods = ''
+      }
+    },
     checkFromStore() {
+      //从食物的详细列表返回时, 原来的记录要保存起来
       let state = this.$store.state
       if (state.food !== []) {
         this.foods = state.food
@@ -65,7 +111,7 @@ export default {
         this.inputContent = state.inputContent
       }
     },
-    setStore() {
+    setFoodStore() {
       this.$store.commit("setFood", this.foods)
       this.$store.commit("setContent", this.inputContent)
     },
@@ -116,9 +162,9 @@ export default {
     },
     handleRowClick(row) {
       console.log(row)
-      this.setStore()
+      this.setFoodStore()
       this.$router.push({
-        name: 'foodDetial',
+        name: 'foodDetail',
         path: '/food',
         params: { food: row}})
     }
