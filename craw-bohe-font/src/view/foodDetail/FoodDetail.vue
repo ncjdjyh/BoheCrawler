@@ -7,7 +7,10 @@
       <div class="evaluation">{{food.evaluation}}</div>
       <div class="bottom clearfix">
         <time class="time">{{ currentDate }}</time>
-        <el-button type="text" class="button" @click="back">返回</el-button>
+        <span class="buttons">
+          <el-button class="btFont" type="text" @click="back">返回</el-button>
+          <el-button class="btFont" type="text" v-if="isLogin == true && isFavoriteDetail == false" @click="handleAddFavorite">收藏</el-button>
+        </span>
       </div>
     </div>
   </el-card>
@@ -25,12 +28,15 @@
     line-height: 12px;
   }
 
-  .button {
-    padding: 0;
-    font-size: 18px;
-    font-weight: bold;
+  .buttons {
     float: right;
+  }
+
+  .btFont {
     color: #F56C6C;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
   }
 
   .title {
@@ -61,31 +67,4 @@
   }
 </style>
 
-<script>
-  export default {
-    data() {
-      return {
-        currentDate: new Date(),
-        food: {}
-      };
-    },
-    computed: {
-      imgUrl() {
-          return "../static/foods/" + this.food.img
-      }
-    },
-    methods: {
-      back() {
-        window.history.length > 1
-          ? this.$router.go(-1)
-          : this.$router.push('/')
-      }
-    },
-    mounted() {
-      this.food = this.$route.params.food
-      if (this.food == undefined || this.food == "") {
-        this.back()
-      }
-    }
-  }
-</script>
+<script src="./js/foodDetail.js"> </script>

@@ -51,8 +51,8 @@ export default new Vuex.Store({
       } else {
         //退出登录
         console.log("out")
-        sessionStorage.setItem('username', null)
-        state.auth.user = null
+        sessionStorage.setItem('username', '')
+        state.auth.user = ''
         state.auth.isLogin = false
         console.log(sessionStorage.getItem('username'))
       }

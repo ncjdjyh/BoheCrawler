@@ -1,8 +1,6 @@
 <template>
   <div>
-    <background></background>
-    <router-view></router-view>
-    <!--<el-row>
+    <el-row>
       <el-autocomplete
         class="inline-input"
         v-model="inputContent"
@@ -61,11 +59,12 @@
           没有找到你需要的数据,sorry!
         </span>
       </div>
-    </div>-->
+    </div>
   </div>
 </template>
 
-<script src="./js/home.js"></script>
+<script src="./js/searchHolder.js"></script>
+
 
 <style scoped>
   .el-autocomplete {

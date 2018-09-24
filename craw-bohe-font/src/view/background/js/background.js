@@ -10,6 +10,7 @@ export default {
   },
   computed: {
     isLogin() {
+      console.log(this.$store.getters.getLoginState)
      return this.$store.getters.getLoginState
     },
     username() {
@@ -27,7 +28,7 @@ export default {
   },
     logout() {
       Logout()
-      this.$store.commit('setAuthState', null)
+      this.$store.commit('setAuthState', '')
     },
     goLoginForm() {
       this.$router.push('/login')

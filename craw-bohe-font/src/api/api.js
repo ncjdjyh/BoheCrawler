@@ -3,13 +3,14 @@ import qs from 'qs';
 
 let base = 'api';
 
+let auth = 'auth'
+
 export const requestLogin = params => { return axios.post(`${base}/login`, params).then(res => res.data); };
 
 export const GetFoodList = params => { return axios.get(`${base}/food?name=${params}`); };
 
 export const SuggestSearch = params => { return axios.get(`${base}/food/suggest_search?name=${params}`)}
 
-export const getUser = params => {return axios.get(`${base}/student/${params}`)}
 
 export const GetIndex = params => {
   return axios({
@@ -18,17 +19,36 @@ export const GetIndex = params => {
   })
 }
 
-export const GetUser = ()=> {
+export const GetUser = () => {
   return axios({
     method: 'get',
-    url:`${base}/user`
+    url:`${auth}/userAuth`
+  })
+}
+
+export const GetFavoriteList = params => {
+  return axios({
+    method: 'get',
+    url:`${auth}/favoriteList/${params}`
+  })
+}
+
+export const AddFavorite = (uid, fid) => {
+  let postData = qs.stringify({
+    uid: uid,
+    fid: fid,
+  });
+  return axios({
+    method: 'post',
+    url: `${auth}/addFavorite`,
+    data: postData
   })
 }
 
 export const Logout = () => {
   return axios({
     method: 'get',
-    url:`${base}/logout`
+    url:`${auth}/logout`
   })
 }
 
@@ -41,7 +61,7 @@ export const GoLogin = params => {
   });
   return axios({
     method:'post',
-    url:`${base}/login`,
+    url:`${auth}/login`,
     data: postData
   })
 }

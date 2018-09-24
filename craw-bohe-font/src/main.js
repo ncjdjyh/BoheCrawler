@@ -30,6 +30,14 @@ Vue.config.productionTip = false
   next();
 });*/
 
+/*router.beforeEach((to, from, next) => {
+  const fromRouter = 'home'
+  if (to.name === fromRouter) {
+    console.log(to.name)
+    router.push({name: 'login'})
+  }
+})*/
+
 
 /* eslint-disable no-new */
 new Vue({
