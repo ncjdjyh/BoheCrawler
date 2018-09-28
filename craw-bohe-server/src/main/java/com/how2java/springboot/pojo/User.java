@@ -1,4 +1,4 @@
-package com.cun.security3.pojo;
+package com.how2java.springboot.pojo;
 
 public class User {
     private String id;

@@ -2,7 +2,6 @@ import axios from 'axios';
 import qs from 'qs';
 
 let base = 'api';
-
 let auth = 'auth'
 
 export const requestLogin = params => { return axios.post(`${base}/login`, params).then(res => res.data); };
